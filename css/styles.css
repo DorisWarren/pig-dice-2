@@ -1,11 +1,14 @@
 #game-hidden {
   display: none;
+  text-align: center;
 }
 
 body {
   color: #f29c94;
   background-color: #3a3659;
 }
+
+
 .diceHeader {
   height: 159px;
   width: auto;

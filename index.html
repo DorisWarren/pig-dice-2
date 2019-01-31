@@ -24,25 +24,26 @@
       </form>
       <div id="game-hidden">
         <div class="row">
-          <div class="col-xs-6">
+          <div id="player1" class="col-lg-3 player">
             <h2><span class="player1"></span></h2>
-            <h4>Turn Points: <span class= "player1TurnPoints"></span></h4>
-            <h4>Total Points: <span class= "player1TotalPoints"></span></h4>
+            <h3 class="points"><span class="totalPoints1"></span></h3>
+          </div>
+          <div class="col-lg-6 player">
+            <h2><span class ="playerName"></span></h2>
+            <h2><span class = "diceRoll"></span></h2>
             <button id="rollDice" type="button" name="button" class="btn btn-primary">Roll Dice!</button>
+
+            <h3>Turn Points:<span class="turnPoints"></span></h3>
+
             <button id="hold1" type="button" name="button" class="btn btn-warning">Hold</button>
             <button id="endTurn1" type="button" name="button" class="btn btn-danger">End Turn</button>
             <div id="result">
 
             </div>
           </div>
-          <div class="col-xs-6">
+          <div id="player2" class="col-lg-3 player">
             <h2><span class="player2"></span></h2>
-            <button id="rollDice2" type="button" name="button" class="btn btn-primary">Roll Dice!</button>
-            <button id="hold2" type="button" name="button" class="btn btn-warning">Hold</button>
-            <button id="endTurn2" type="button" name="button" class="btn btn-danger">End Turn</button>
-            <div id="result2">
-
-            </div>
+            <h3 class="points"><span class="totalPoints2"></span></h3>
           </div>
         </div>
       </div>
