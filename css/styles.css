@@ -1,3 +1,33 @@
 #game-hidden {
   display: none;
 }
+
+body {
+  color: #f29c94;
+  background-color: #3a3659;
+}
+.diceHeader {
+  height: 159px;
+  width: auto;
+}
+h1 {
+  border: 8px solid #f29c94;
+  text-align: center;
+  font-size: 100px;
+  padding: 40px 0px;
+  margin-bottom: 50px;
+}
+
+.inputName {
+  font-size: 40px;
+}
+
+.form-control {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+
+.btn {
+  font-size: 25px;
+}

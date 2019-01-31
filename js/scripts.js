@@ -6,22 +6,19 @@ PigDice.prototype.addPlayers = function(player) {
   this.players.push(player);
 }
 
-function dieRoll() {
-  var dieRoll = Math.floor(Math.random() * 6 + 1);
-  return dieRoll;
-}
 
-Players.prototype.endTurn = function() {
-  this.turn = false;
-  this.totalPoints += this.turnPoints;
-  this.turnPoints = 0;
-}
 
 function Players (name, turn=false) {
   this.name = name;
   this.totalPoints = 0;
   this.turnPoints = 0;
   this.turn = turn;
+}
+
+Players.prototype.endTurn = function() {
+  this.turn = false;
+  this.totalPoints += this.turnPoints;
+  this.turnPoints = 0;
 }
 
 Players.prototype.checkWinStatus = function() {
@@ -40,6 +37,10 @@ Players.prototype.calculateTurnPoints= function(dieRoll) {
 }
 
 
+function dieRoll() {
+  var dieRoll = Math.floor(Math.random() * 6 + 1);
+  return dieRoll;
+}
 
 
 $(document).ready(function() {
