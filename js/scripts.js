@@ -19,6 +19,7 @@ Players.prototype.endTurn = function() {
   this.turn = false;
   this.totalPoints += this.turnPoints;
   this.turnPoints = 0;
+  console.log(player.playerTurnPoints)
 }
 
 Players.prototype.checkWinStatus = function() {
@@ -88,9 +89,9 @@ $(document).ready(function() {
   $("#hold1").click(function() {
     pigDice.players.forEach(function(player) {
       if(player.turn === true ) {
-        player.endTurn();
         $(".player1TurnPoints").text(player.turnPoints);
         $(".player1TotalPoints").text(player.totalPoints);
+        player.endTurn();
       }
     });
   });
